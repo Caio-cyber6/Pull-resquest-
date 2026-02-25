@@ -36,11 +36,49 @@
             border: none;
             cursor: pointer;
             text-align: center;
-            display: inline-block;
+            font-size: large;
+            
         }
         .btn:hover {
             background-color: #45a049;
         }
+        section {
+    background: #45a049;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    width: 350px;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    select {
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background: #265828;
+        color: gold;
+        transition: 0.3s;
+    }
+
+    select:hover {
+        background: #0e5421;
+        transform: scale(1.05);
+    }
+
+    select:focus {
+        outline: none;
+        box-shadow: 0 0 10px gold;
+    }
     </style>
 </head>
 <body>
@@ -64,9 +102,22 @@
         </ul>
     </section>
 
-    <button class="btn">Clique aqui para aprender mais!</button>
+    <section>
+        <button class="btn">Clique aqui para aprender mais!</button>
+    </section>
+    <section>
+        <h2>Faça uma avaliação do nosso site!</h2>
+        <label for="">
+            <select name="avaliação" id="avv">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+        </label>
+    </section>
 </main>
-
 <footer>
     <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
 </footer>
