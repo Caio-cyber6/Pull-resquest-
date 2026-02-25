@@ -5,42 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo de Página HTML</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: #4caf50;
-        color: white;
-        padding: 15px;
-        text-align: center;
-      }
-      main {
-        padding: 20px;
-      }
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-      .btn {
-        background-color: #4caf50;
-        color: white;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            font-size: large;
+            
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        section {
+    background: #45a049;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    width: 350px;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    select {
+        font-size: 20px;
         padding: 10px 20px;
+        border-radius: 10px;
         border: none;
         cursor: pointer;
-        text-align: center;
-        display: inline-block;
-      }
-      .btn:hover {
-        background-color: #45a049;
-      }
+        background: #265828;
+        color: gold;
+        transition: 0.3s;
+    }
+
+    select:hover {
+        background: #0e5421;
+        transform: scale(1.05);
+    }
+
+    select:focus {
+        outline: none;
+        box-shadow: 0 0 10px gold;
+    }
     </style>
   </head>
   <body>
@@ -65,28 +103,24 @@
           <li>Interação com formulários.</li>
           <li>Design simples e responsivo.</li>
         </ul>
-      </section>
-      <h2>Simulador Fluxo GitHub</h2>
-      <p
-        style="
-          background-color: rgba(128, 128, 128, 0.5);
-          height: 30px;
-          width: 350px;
-          display: flex;
-          align-items: center; /* centraliza vertical */
-          justify-content: center; /* centraliza horizontal */
-        "
-      >
-        <code>git add → git commit → git push → pull request</code>
-      </p>
+    </section>
 
-      <button class="btn">Clique aqui para aprender mais!</button>
-      <section id="dicas">
-        <img src="shinitti.jpg" alt="shinitti" />
-        <h2>esse é o chíniti</h2>
-      </section>
-    </main>
-
+    <section>
+        <button class="btn">Clique aqui para aprender mais!</button>
+    </section>
+    <section>
+        <h2>Faça uma avaliação do nosso site!</h2>
+        <label for="">
+            <select name="avaliação" id="avv">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+        </label>
+    </section>
+</main>
     <footer>
       <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
     </footer>
